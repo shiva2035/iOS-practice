@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileViewController">
+            <connections>
+                <outlet property="emailTextField" destination="4fF-yG-wjJ" id="ceA-hb-c6Q"/>
+                <outlet property="firstNameTextField" destination="Tm5-i2-lIy" id="383-Q7-ro9"/>
+                <outlet property="lastNameTextField" destination="5hR-4L-v3k" id="69O-3s-2NR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name of User" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tm5-i2-lIy">
+                    <rect key="frame" x="8" y="106" width="584" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name of User" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5hR-4L-v3k">
+                    <rect key="frame" x="8" y="156" width="584" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Email ID" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4fF-yG-wjJ">
+                    <rect key="frame" x="8" y="201" width="584" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Profile Information" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sai-E4-ord">
+                    <rect key="frame" x="8" y="65" width="584" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.26745612889999998" green="0.78684793529999997" blue="0.79643188259999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="5hR-4L-v3k" secondAttribute="trailing" constant="8" id="1JR-Bo-YXY"/>
+                <constraint firstItem="4fF-yG-wjJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="4HI-uG-1Js"/>
+                <constraint firstAttribute="trailing" secondItem="Tm5-i2-lIy" secondAttribute="trailing" constant="8" id="6ep-cT-9ED"/>
+                <constraint firstAttribute="trailing" secondItem="Sai-E4-ord" secondAttribute="trailing" constant="8" id="D1G-ce-SKz"/>
+                <constraint firstItem="4fF-yG-wjJ" firstAttribute="top" secondItem="5hR-4L-v3k" secondAttribute="bottom" constant="15" id="L8N-56-8IG"/>
+                <constraint firstItem="5hR-4L-v3k" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="MnR-YE-nHc"/>
+                <constraint firstAttribute="trailing" secondItem="4fF-yG-wjJ" secondAttribute="trailing" constant="8" id="eYI-wh-oUc"/>
+                <constraint firstItem="Sai-E4-ord" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="65" id="jYA-v3-EsH"/>
+                <constraint firstItem="Sai-E4-ord" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="k4G-5D-AaV"/>
+                <constraint firstItem="5hR-4L-v3k" firstAttribute="top" secondItem="Tm5-i2-lIy" secondAttribute="bottom" constant="20" id="lso-ep-YdP"/>
+                <constraint firstItem="Tm5-i2-lIy" firstAttribute="top" secondItem="Sai-E4-ord" secondAttribute="bottom" constant="20" id="p25-Y8-A3n"/>
+                <constraint firstItem="Tm5-i2-lIy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="tUO-Fd-fdK"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
