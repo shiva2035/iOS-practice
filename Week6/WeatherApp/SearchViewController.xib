@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1808" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController">
+            <connections>
+                <outlet property="countryName" destination="qJp-DM-Izk" id="maF-Om-dye"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="744" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="244" verticalHuggingPriority="251" horizontalCompressionResistancePriority="737" misplaced="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" text="Country Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tMf-Mc-jPm">
+                    <rect key="frame" x="28" y="99" width="111" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7bi-Lq-tfc">
+                    <rect key="frame" x="8" y="161" width="398" height="41"/>
+                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="0.35000000000000003" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="IrX-UD-p4U"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="Search Cities">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" red="0.88054371840000001" green="0.55734857439999996" blue="0.10576847859999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="searchCities:" destination="-1" eventType="touchUpInside" id="k4m-Lr-lrd"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="243" horizontalCompressionResistancePriority="743" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qJp-DM-Izk">
+                    <rect key="frame" x="158" y="99" width="182" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="qJp-DM-Izk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="8bW-F4-3DE"/>
+                <constraint firstItem="7bi-Lq-tfc" firstAttribute="top" secondItem="qJp-DM-Izk" secondAttribute="bottom" constant="34" id="8ck-fD-OkJ"/>
+                <constraint firstItem="qJp-DM-Izk" firstAttribute="leading" secondItem="tMf-Mc-jPm" secondAttribute="trailing" constant="10" id="Bze-7R-2c7"/>
+                <constraint firstAttribute="trailing" secondItem="7bi-Lq-tfc" secondAttribute="trailing" constant="100" id="GyQ-lB-6rc"/>
+                <constraint firstItem="7bi-Lq-tfc" firstAttribute="top" secondItem="qJp-DM-Izk" secondAttribute="bottom" constant="30" id="HV8-la-RAc"/>
+                <constraint firstItem="7bi-Lq-tfc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="PYQ-0P-0lx"/>
+                <constraint firstItem="tMf-Mc-jPm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="25" id="RNb-53-eHn"/>
+                <constraint firstItem="7bi-Lq-tfc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="166" id="Xev-5E-PIt"/>
+                <constraint firstItem="7bi-Lq-tfc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="jOh-4d-TGQ"/>
+                <constraint firstItem="tMf-Mc-jPm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="niz-q9-OY9"/>
+                <constraint firstAttribute="trailing" secondItem="7bi-Lq-tfc" secondAttribute="trailing" constant="8" id="nng-0z-Mt2"/>
+                <constraint firstItem="tMf-Mc-jPm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="rmh-hW-FCz"/>
+                <constraint firstAttribute="trailing" secondItem="qJp-DM-Izk" secondAttribute="trailing" constant="75" id="w6h-av-SAA"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="RNb-53-eHn"/>
+                    <exclude reference="8ck-fD-OkJ"/>
+                    <exclude reference="GyQ-lB-6rc"/>
+                    <exclude reference="Xev-5E-PIt"/>
+                    <exclude reference="jOh-4d-TGQ"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>
